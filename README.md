@@ -1,58 +1,60 @@
-# 📐 Numerical Methods — Métodos Numéricos en Excel VBA
+# Numerical Methods
 
 [![Excel](https://img.shields.io/badge/Excel-VBA-217346?logo=microsoftexcel&logoColor=white)](https://www.microsoft.com/en-us/microsoft-365/excel)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
-Implementation of **Numerical Methods** algorithms using Excel VBA macros, including matrix operations, the Gauss-Seidel iterative method, and a comprehensive final project covering multiple numerical analysis techniques.
+## Overview
 
----
+Implementation of numerical analysis algorithms using Excel VBA macros. The project covers iterative methods for solving systems of linear equations, matrix operations, and a comprehensive collection of computational techniques applied to engineering and scientific problem-solving.
 
-## 🎯 Implemented Methods
+## Implemented Methods
 
-| Method | File | Description |
-|--------|------|-------------|
-| **Gauss-Seidel** | `MatrizGaussSeidel.xlsx` | Iterative method for solving systems of linear equations |
-| **Matrix Operations** | `Matrices.xlsx` | Matrix arithmetic and transformations |
-| **Final Project** | `ProyectoFinal.xlsm` | Comprehensive numerical methods implementation |
+| Method | File | Domain |
+|--------|------|--------|
+| Gauss-Seidel Iterative Solver | MatrizGaussSeidel.xlsx | Systems of linear equations |
+| Matrix Operations | Matrices.xlsx | Matrix arithmetic, transformations |
+| Comprehensive Final Project | ProyectoFinal.xlsm | Multiple numerical techniques |
 
----
+## Installation
 
-## 📁 Project Structure
+Requires Microsoft Excel 2016 or later with macro support enabled. Open `.xlsm` files and enable macros when prompted.
 
-```
-numerical-methods/
-├── MatrizGaussSeidel.xlsx       # Gauss-Seidel iterative solver
-├── Matrices.xlsx                # Matrix operations
-├── ProyectoFinal.xlsm          # Comprehensive final project (with macros)
-└── README.md
-```
+## Roadmap
 
----
+- [ ] Migration to Python with NumPy/SciPy implementations
+- [ ] Jupyter Notebook documentation with mathematical derivations
+- [ ] Interactive web visualizations with Plotly
 
-## 🚀 Getting Started
+## License
 
-### Prerequisites
-- Microsoft Excel 2016+ (with macro support)
-
-### Running
-1. Open the `.xlsm` files in Excel
-2. Enable macros when prompted
-3. Follow the instructions in each worksheet
-
----
-
-## 🔮 Roadmap
-
-- [ ] Migrate algorithms to Python (Jupyter Notebooks)
-- [ ] Add NumPy/SciPy implementations for comparison
-- [ ] Interactive web visualization with Plotly
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see [LICENSE](./LICENSE) for details.
-
----
+MIT License. See [LICENSE](./LICENSE).
 
 **Developed by [Leonardo Diaz](https://github.com/LeoDiaz-DataSc)**
+
+---
+
+# Version en Espanol
+
+## Descripcion General
+
+Implementacion de algoritmos de analisis numerico utilizando macros VBA de Excel. El proyecto cubre metodos iterativos para resolver sistemas de ecuaciones lineales, operaciones matriciales y una coleccion integral de tecnicas computacionales aplicadas a la resolucion de problemas de ingenieria y ciencias.
+
+## Metodos Implementados
+
+| Metodo | Archivo | Dominio |
+|--------|---------|---------|
+| Solucionador Iterativo Gauss-Seidel | MatrizGaussSeidel.xlsx | Sistemas de ecuaciones lineales |
+| Operaciones Matriciales | Matrices.xlsx | Aritmetica matricial, transformaciones |
+| Proyecto Final Integral | ProyectoFinal.xlsm | Multiples tecnicas numericas |
+
+## Instalacion
+
+Requiere Microsoft Excel 2016 o posterior con soporte de macros habilitado. Abrir archivos `.xlsm` y habilitar macros cuando se solicite.
+
+## Hoja de Ruta
+
+- [ ] Migracion a Python con implementaciones NumPy/SciPy
+- [ ] Documentacion en Jupyter Notebook con derivaciones matematicas
+- [ ] Visualizaciones web interactivas con Plotly
+
+**Desarrollado por [Leonardo Diaz](https://github.com/LeoDiaz-DataSc)**
