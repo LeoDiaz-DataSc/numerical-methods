@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+
+# Temp Excel files
+~$*.xlsx
+~$*.xlsm
+*.tmp
+
+# Python / Jupyter (for future migration)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
