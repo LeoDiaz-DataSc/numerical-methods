@@ -29,7 +29,7 @@ Requires Microsoft Excel 2016 or later with macro support enabled. Open `.xlsm` 
 
 MIT License. See [LICENSE](./LICENSE).
 
-**Developed by [Leonardo Diaz](https://github.com/LeoDiaz-DataSc)**
+**Developed by [Diego Leobardo Diaz Hernandez](https://github.com/LeoDiaz-DataSc)**
 
 ---
 
@@ -57,4 +57,4 @@ Requiere Microsoft Excel 2016 o posterior con soporte de macros habilitado. Abri
 - [ ] Documentacion en Jupyter Notebook con derivaciones matematicas
 - [ ] Visualizaciones web interactivas con Plotly
 
-**Desarrollado por [Leonardo Diaz](https://github.com/LeoDiaz-DataSc)**
+**Desarrollado por [Diego Leobardo Diaz Hernandez](https://github.com/LeoDiaz-DataSc)**
