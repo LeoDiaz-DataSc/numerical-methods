@@ -1,60 +1,63 @@
-# Numerical Methods
+# Numerical Methods Web App (SPA)
 
-[![Excel](https://img.shields.io/badge/Excel-VBA-217346?logo=microsoftexcel&logoColor=white)](https://www.microsoft.com/en-us/microsoft-365/excel)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react)](https://reactjs.org)
+[![Vite](https://img.shields.io/badge/Vite-6+-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![GSAP](https://img.shields.io/badge/GSAP-Premium_UI-88CE02?style=flat-square)](https://greensock.com/gsap/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 
-## Overview
+## 📌 Visión General
 
-Implementation of numerical analysis algorithms using Excel VBA macros. The project covers iterative methods for solving systems of linear equations, matrix operations, and a comprehensive collection of computational techniques applied to engineering and scientific problem-solving.
+Modernización del proyecto *MacroExcel* (originalmente construido en VBA) a una **Aplicación Web Single Page (SPA)** puramente en React. 
 
-## Implemented Methods
+Esta arquitectura está diseñada específicamente para ser **100% Client-Side**, permitiendo realizar cálculos de álgebra lineal y métodos numéricos directamente en el navegador del usuario sin necesidad de un servidor backend, haciéndola ideal para despliegue en hostings gratuitos y estáticos como **InfinityFree, GitHub Pages o Vercel**.
 
-| Method | File | Domain |
-|--------|------|--------|
-| Gauss-Seidel Iterative Solver | MatrizGaussSeidel.xlsx | Systems of linear equations |
-| Matrix Operations | Matrices.xlsx | Matrix arithmetic, transformations |
-| Comprehensive Final Project | ProyectoFinal.xlsm | Multiple numerical techniques |
+## 🚀 Métodos Implementados
 
-## Installation
+1. **Gauss-Seidel (Sistemas de Ecuaciones Lineales)**
+   - Dimensionamiento dinámico (matrices $n \times n$).
+   - Configuración de Iteraciones Máximas y Tolerancia de Error.
+   - Historial en tiempo real de iteraciones y convergencia de error.
+2. **Operaciones Matriciales** *(Próximamente)*
+   - Suma, Multiplicación, Transpuesta.
+3. **Interpolación** *(Próximamente)*
 
-Requires Microsoft Excel 2016 or later with macro support enabled. Open `.xlsm` files and enable macros when prompted.
+## 🏗 Arquitectura y Estructura
 
-## Roadmap
+```text
+Proyecto__MacroExcel/
+├── legacy_excel/          # Archivos originales en .xlsm y .xlsx (VBA)
+└── frontend/              # Nueva Aplicación React SPA
+    ├── src/
+    │   ├── components/    # Componentes UI (MatrixInput)
+    │   ├── pages/         # Vistas principales (GaussSeidelView)
+    │   ├── utils/         # Motor matemático JS (numericalMethods.js)
+    │   ├── App.jsx        # Routing y Layout (Sidebar)
+    │   └── index.css      # Design System (Corporate Dark Theme)
+    └── dist/              # Carpeta de producción (lista para InfinityFree)
+```
 
-- [ ] Migration to Python with NumPy/SciPy implementations
-- [ ] Jupyter Notebook documentation with mathematical derivations
-- [ ] Interactive web visualizations with Plotly
+## 🛠 Instalación Local
 
-## License
+1. Instalar dependencias:
+```bash
+cd frontend
+npm install
+```
 
-MIT License. See [LICENSE](./LICENSE).
+2. Levantar el entorno de desarrollo:
+```bash
+npm run dev
+```
 
-**Developed by [Diego Leobardo Diaz Hernandez](https://github.com/LeoDiaz-DataSc)**
+## 🌐 Preparación para Despliegue (InfinityFree / Estático)
+
+Para generar los archivos listos para producción:
+```bash
+cd frontend
+npm run build
+```
+Esto creará una carpeta `dist/`. El contenido de esta carpeta puede ser subido directamente a `htdocs` en InfinityFree vía FTP. No requiere Node.js ni PHP para funcionar.
 
 ---
-
-# Version en Espanol
-
-## Descripcion General
-
-Implementacion de algoritmos de analisis numerico utilizando macros VBA de Excel. El proyecto cubre metodos iterativos para resolver sistemas de ecuaciones lineales, operaciones matriciales y una coleccion integral de tecnicas computacionales aplicadas a la resolucion de problemas de ingenieria y ciencias.
-
-## Metodos Implementados
-
-| Metodo | Archivo | Dominio |
-|--------|---------|---------|
-| Solucionador Iterativo Gauss-Seidel | MatrizGaussSeidel.xlsx | Sistemas de ecuaciones lineales |
-| Operaciones Matriciales | Matrices.xlsx | Aritmetica matricial, transformaciones |
-| Proyecto Final Integral | ProyectoFinal.xlsm | Multiples tecnicas numericas |
-
-## Instalacion
-
-Requiere Microsoft Excel 2016 o posterior con soporte de macros habilitado. Abrir archivos `.xlsm` y habilitar macros cuando se solicite.
-
-## Hoja de Ruta
-
-- [ ] Migracion a Python con implementaciones NumPy/SciPy
-- [ ] Documentacion en Jupyter Notebook con derivaciones matematicas
-- [ ] Visualizaciones web interactivas con Plotly
 
 **Desarrollado por [Diego Leobardo Diaz Hernandez](https://github.com/LeoDiaz-DataSc)**
